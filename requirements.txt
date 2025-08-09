@@ -1,2 +1,4 @@
 flask
-zappa
+flask-sqlalchemy
+psycopg2-binary
+python-dotenv

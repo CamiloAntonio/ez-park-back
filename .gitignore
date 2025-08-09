@@ -12,6 +12,7 @@ Icon
 
 # Make env variables
 .env.make
+.env
 
 # Thumbnails
 ._*

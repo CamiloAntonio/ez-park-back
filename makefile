@@ -15,6 +15,9 @@ ssh-up:
 ssh-logs:
 	ssh -i $(SSH_KEY) -l $(SSH_USER) $(SERVER_IP) "cd ~/ez-park-back && docker-compose logs -f"
 
+ssh-stop:
+	ssh -i $(SSH_KEY) -l $(SSH_USER) $(SERVER_IP) "cd ~/ez-park-back && docker-compose down"
+
 gen-key:
 	ssh-keygen -t rsa -b 4096 -f ~/.ssh/ez-gcp -N "" -C "$(USER)@$(HOSTNAME)"
 	show-key
